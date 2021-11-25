@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+:root {
+  --success-color: #28a745;
+  --error-color: #dc3545;
+}
+
 * {
   box-sizing: border-box;
   /* padding doesn't affect boxing */
@@ -55,10 +60,22 @@ h2 {
 }
 
 .form-control.success input {
-  border-color: #2ecc71
+  border-color: var(--success-color)
 }
 .form-control.error input {
-  border-color: red
+  border-color: var(--error-color)
+}
+
+.form-control small {
+  border-color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
 }
 
 .form {
