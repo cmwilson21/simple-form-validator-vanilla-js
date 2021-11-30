@@ -26,4 +26,21 @@ form.addEventListener('submit', function(e){
   } else {
     showSuccess(username);
   }
+  if(email.value === '') {
+    showError(email, 'Email is required');
+  } else {
+    showSuccess(username);
+  }
+  if(password.value === '') {
+    showError(password, 'Password is required');
+  } else {
+    showSuccess(username);
+  }
+  if(password2.value === '') {
+    showError(password2, 'Password2 is required');
+  } else {
+    showSuccess(username);
+  }
+
+
 })
