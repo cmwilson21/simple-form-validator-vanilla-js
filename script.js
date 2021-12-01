@@ -50,5 +50,4 @@ form.addEventListener('submit', function(e){
     showSuccess(username);
   }
 
-
 })
